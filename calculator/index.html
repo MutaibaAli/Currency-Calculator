@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="converter-container mx-auto p-6 rounded-lg shadow-md max-w-sm">
+        <h2 class="title text-2xl font-bold text-center mb-6">Currency Converter</h2>
+        <div class="input-group mb-4">
+            <label for="amount" class="label">Amount</label>
+            <input type="number" id="amount" class="input w-full p-2 border rounded-md" placeholder="Enter amount" required>
+        </div>
+        <div class="input-group mb-4">
+            <label for="fromCurrency" class="label">From Currency</label>
+            <select id="fromCurrency" class="select w-full p-2 border rounded-md">
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="CNY">CNY - Chinese Yuan</option>
+                <option value="NZD">NZD - New Zealand Dollar</option>
+                <option value="SGD">SGD - Singapore Dollar</option>
+                <option value="HKD">HKD - Hong Kong Dollar</option>
+                <option value="NOK">NOK - Norwegian Krone</option>
+                <option value="SEK">SEK - Swedish Krona</option>
+                <option value="MXN">MXN - Mexican Peso</option>
+                <option value="ZAR">ZAR - South African Rand</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+                <option value="RUB">RUB - Russian Ruble</option>
+                <option value="TRY">TRY - Turkish Lira</option>
+                <option value="IDR">IDR - Indonesian Rupiah</option>
+                <option value="THB">THB - Thai Baht</option>
+                <option value="AED">AED - United Arab Emirates Dirham</option>
+            </select>
+        </div>
+        <div class="input-group mb-4">
+            <label for="toCurrency" class="label">To Currency</label>
+            <select id="toCurrency" class="select w-full p-2 border rounded-md">
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="CNY">CNY - Chinese Yuan</option>
+                <option value="NZD">NZD - New Zealand Dollar</option>
+                <option value="SGD">SGD - Singapore Dollar</option>
+                <option value="HKD">HKD - Hong Kong Dollar</option>
+                <option value="NOK">NOK - Norwegian Krone</option>
+                <option value="SEK">SEK - Swedish Krona</option>
+                <option value="MXN">MXN - Mexican Peso</option>
+                <option value="ZAR">ZAR - South African Rand</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+                <option value="RUB">RUB - Russian Ruble</option>
+                <option value="TRY">TRY - Turkish Lira</option>
+                <option value="IDR">IDR - Indonesian Rupiah</option>
+                <option value="THB">THB - Thai Baht</option>
+                <option value="AED">AED - United Arab Emirates Dirham</option>
+            </select>
+        </div>
+        <button id="convertBtn" class="button w-full bg-indigo-600 text-white p-3 rounded-md hover:bg-indigo-700 transition">Convert</button>
+        <h3 class="result mt-4 text-lg font-semibold text-center" id="result"></h3>
+    </div>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
+
